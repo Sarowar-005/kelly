@@ -1,0 +1,240 @@
+/*Navbar*/
+.sec-header{
+    padding: 40px;
+}
+.sec-header h1{
+    font-size: 30px;
+    font-weight: 500;
+
+}
+.navbar{
+    padding: 12px 0px;
+}
+.navbar-brand{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.nav-link{
+    font-size: 16px;
+    font-weight: 600;
+}
+.social-link a i{
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    transition: 0.5s;
+}
+.social-link a i:hover{
+    color: rgb(18, 136, 190);
+}
+
+
+/*Home*/
+#home{
+    background-image: url(images/hero-bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home .container {
+    padding-top: 160px;
+    position: relative;
+}
+#home .container h1{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Paytone One', sans-serif;
+}
+#home .container p{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+}
+.about-btn{
+    background-color: rgb(19, 171, 177);
+    padding: 10px 30px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Zilla Slab', serif;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 1s;
+}
+.about-btn:hover{
+    background-color: rgb(18, 136, 190);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/*About Section*/
+#about-section{
+    
+}
+
+#about{
+    padding: 40px 0px;
+}
+.about-header{
+    padding: 20px 0px;
+}
+.about-header h1{
+    font-size: 34px;
+    font-weight: 600;
+    font-family: 'Paytone One', sans-serif;
+    margin-bottom: 10px;
+}
+.about-header p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(110, 110, 110);
+}
+
+.about-content{}
+.about-content h1{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+}
+.about-content p{
+    font-size: 16px;
+    padding: 5px 0px;
+}
+
+.about-content ul{
+    padding: 0;
+    margin: 0;
+}
+.about-content ul li{
+    padding: 5px 0px;
+}
+.about-content ul li i{
+    color: rgb(19, 171, 177);
+    padding-right: 10px;
+}
+
+.progress{
+    height: 10px;
+    width: 100%;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+@keyframes example{
+    from{width: 0;}
+    to{width: 100%;}
+}
+
+.progress-bar{
+    background-color: rgb(19, 171, 177);
+}
+
+
+/*Resume section*/
+#resume{
+
+    padding: 50px 0px;
+}
+.resume-tittle{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.resume-item{
+    border-left: 2px solid rgb(6, 115, 134);
+    padding-left: 20px;
+    position: relative;
+}
+.resume-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    top: -16px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgb(6, 115, 134);
+    border-radius: 16px;
+    
+}
+.resume-duration{
+    background: rgba(6, 115, 134, 0.493);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.resume-item h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(6, 115, 134);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.resume-item ul li{
+    line-height: 25px;
+}
+
+
+#service{
+    
+}
+img{
+    width: 100%;
+}
+.portfolio{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-img{
+    position: relative;
+}
+.portfolio-img::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.466);
+    ;
+    transition: all 0.5s;
+}
+.portfolio-img:hover::before{
+    height: 100%;
+    cursor: pointer;
+}
+
+.portfolio-content{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all 1s;
+}
+.portfolio:hover .portfolio-content{
+    bottom: 40%;
+    transform: scaleY(1);
+}
+.port-img{
+    position: absolute;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.portfolio:hover .port-img{
+    transform: scale(1.1);
+}
