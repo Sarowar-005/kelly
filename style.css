@@ -9,6 +9,7 @@
 }
 .navbar{
     padding: 12px 0px;
+    position: relative;
 }
 .navbar-brand{
     font-size: 28px;
@@ -22,12 +23,15 @@
 .social-link a i{
     font-size: 18px;
     color: black;
-    padding: 10px;
+    padding: 5px;
     transition: 0.5s;
 }
 .social-link a i:hover{
     color: rgb(18, 136, 190);
 }
+
+
+
 
 
 /*Home*/
@@ -41,7 +45,6 @@
 
 #home .container {
     padding-top: 160px;
-    position: relative;
 }
 #home .container h1{
     font-size: 40px;
@@ -237,4 +240,35 @@ img{
 }
 .portfolio:hover .port-img{
     transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:992px){
+    .navbar{
+        position: relative;
+    }
+    .navbar-toggler{
+        position: absolute;
+        top: 20px;
+        right: 5%;
+    }
+    .social-link{
+        position: absolute;
+        top: 25px;
+        right: 15%;
+    }
+}
+
+@media (max-width:720px){
+    .social-link{
+        position: absolute;
+        right: 18%;
+    }
 }
